@@ -1,0 +1,89 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  --nimi-font-color: rgba(255, 255, 255, 0.87);
+  --nimi-background-color: rgb(32, 44, 37);
+  color: var(--nimi-font-color);
+  background-color: var(--nimi-background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: rgb(167,207,181);
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: rgb(154, 219, 211);
+}
+
+body {
+  width: 100vw;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  & > section, & > main {
+    width: 100%;
+  }
+}
+
+#hero {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 56.25vw;
+  max-height: 30rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(208,208,208);
+  background-image: url('/nonstop-nimi-nightmare-frame1.png');
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  video {
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+  }
+}
+
+main {
+  background-image: linear-gradient(to bottom, rgb(208,208,208), var(--nimi-background-color) 3rem);
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  & > * {
+    max-width: 960px;
+    text-align: center;
+  }
+}
+
+footer {
+  height: 2.5rem;
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: color-mix(in srgb, var(--nimi-font-color), black 20%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(167,207,181, .07) 1.5rem);
+}
+
+h1, h2, h3{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+p {
+  margin-block: 0.25rem;
+}
