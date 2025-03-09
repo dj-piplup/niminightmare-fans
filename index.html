@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,17 +7,38 @@
     <title>Nimi Nightmare Fans</title>
     <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="./src/nimi-socials.ts"></script>
+    <script type="module" src="./src/nimi-projects.ts"></script>
   </head>
   <body>
     <section id="hero">
-      <video autoplay loop muted inert disablePictureInPicture src="./nonstop-nimi-nightmare.mp4"></video>
+      <video
+        autoplay
+        loop
+        muted
+        inert
+        disablePictureInPicture
+        src="./nonstop-nimi-nightmare.mp4"
+      ></video>
     </section>
     <main>
-      <h1><!--TODO: use a logo instead of plain text-->Nimi Nightmare</h1>
-      <h2>Fan site host</h2>
-      <p>Konbakuwa! This is a destination for various fan-projects relating to our favorite baku nurse (you should <nimi-socials><a slot="link">check her out</a></nimi-socials>)</p>
-      <p>Want a [project].niminightmare.fans link for your own Nimi-related project? Send a message to <a href="mailto:niminightmare.fans@gmail.com">niminightmare.fans@gmail.com</a></p>
+      <h1><span class="nimi-name">Nimi Nightmare</span> <em>Fan Host</em></h1>
+      <section>
+        <p>
+          Konbakuwa! This is a destination for various fan-projects relating to
+          our favorite baku nurse
+        </p>
+        <p>
+          Want a [project].niminightmare.fans link for your own Nimi-related
+          project? Send a message to
+          <a href="mailto:niminightmare.fans@gmail.com"
+            >niminightmare.fans@gmail.com</a
+          >
+        </p>
+      </section>
+
+      <nimi-projects class="spacer"></nimi-projects>
+      <nimi-socials id="socials"></nimi-socials>
     </main>
-    <footer>Not associated with Nimi Nightmare</footer>
+    <footer>This site is not officially associated with Nimi Nightmare</footer>
   </body>
 </html>
